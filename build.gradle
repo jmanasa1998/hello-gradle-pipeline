@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.manasa'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+task runApp(type: JavaExec) {
+    main = 'com.manasa.Main'
+    classpath = sourceSets.main.runtimeClasspath
+}

@@ -1,0 +1,11 @@
+task prepare {
+    doLast {
+        println 'Preparing...'
+    }
+}
+
+task buildApp(dependsOn: prepare) {
+    doLast {
+        println 'Building application...'
+    }
+}
